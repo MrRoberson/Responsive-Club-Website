@@ -1,0 +1,202 @@
+/* Universal Styles */
+
+body {
+    font-size: 20px;
+    background-color: hsl(69, 21%, 94%);
+    font-family: "Ubuntu", "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Teko", sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.67em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+hr {
+    width: 67%;
+    color: hsl(46, 84%, 10%);
+}
+
+
+/* Header Styles */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 67%;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav {
+    padding: 10px;
+    background-color: hsla(23, 100%, 63%, 0.75);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid hsl(46, 84%, 10%);
+}
+
+.nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: hsl(307, 26%, 25%);
+}
+
+@media only screen and (min-width: 1024px) {
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        margin: 20px 0;
+    }
+}
+
+
+/* Main Styles */
+
+.container {
+    padding: 10px;
+    margin: 15px 0;
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.button {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: hsl(307, 26%, 25%);
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: "Ubuntu", "Roboto", sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+    .about {
+        margin-top: 20px;
+    }
+    
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 65%;
+    }
+
+    .about {
+        margin-top: 25px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img {
+        width: 33%;
+    }
+}
+
+/* Testimonials Styles */
+
+.testimonial {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: hsl(77, 9%, 84%);
+    border-radius: 4px;
+}
+
+.testimonial p {
+    font-size: 0.8em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 1024px) {
+    .customers {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .testimonial {
+        margin: 10px;
+    }
+}
+
+
+/* Footer Styles */
+
+footer {
+    margin-top: 15px;
+}
+
+.copyright {
+    padding: 10px;
+}
+
+.copyright p {
+    font-size: 0.75em;
+}
